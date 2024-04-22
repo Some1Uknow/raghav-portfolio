@@ -21,9 +21,10 @@ const Main = () => {
       </div>
       <div className="w-1/2 flex flex-row justify-center">
         <Image
-          src="https://via.placeholder.com/300X400"
-          width={300}
-          height={400}
+          src="https://via.placeholder.com/900x1600"
+          width={900}
+          height={160}
+          className="w-2/5 h-2/5"
         />
       </div>
     </div>

@@ -97,7 +97,7 @@ const TechStack = () => {
   ];
 
   return (
-    <div className="h-screen flex flex-col w-screen p-10">
+    <div className="h-screen flex flex-col">
       <div className="text-8xl text-center h-max pb-10 font-bold">
         <span className="text-transparent bg-gradient-to-r from-blue-800 via-blue-500 to-blue-300 bg-clip-text">
           Tech Stack

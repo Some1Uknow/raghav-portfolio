@@ -1,5 +1,5 @@
-import Main from "./Main"
-import NavBar from "./NavBar"
+import Main from "./HomePageComponents/Main"
+import NavBar from "./HomePageComponents/NavBar"
 
 const Home = () => {
   return (

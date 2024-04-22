@@ -1,8 +1,14 @@
-import React from "react";
+import Home from "@/components/Home";
+import TechStack from "@/components/TechStack";
 
 const page = () => {
   return (
-   <div></div>
+    <>
+      <div className=" bg-black text-white font-Poppins">
+        <Home />
+        <TechStack />
+      </div>
+    </>
   );
 };
 

@@ -50,12 +50,13 @@ const TechStack = () => {
       title: "Databases",
       icons: [
         "https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/MongoDB.svg",
-        "https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/Prisma.svg",
+        "https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/Appwrite.svg",
+       
       ],
-      iconNames: ["MongoDB", "Prisma"],
+      iconNames: ["MongoDB", "AppWrite"],
     },
     {
-      title: "Web Technologies",
+      title: "Web Technologies", 
       icons: [
         "https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/HTML.svg",
         "https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/CSS.svg",
@@ -86,16 +87,19 @@ const TechStack = () => {
         "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Github-Light.svg",
         "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/GCP-Dark.svg",
         "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Postman.svg",
+        "https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/Prisma.svg",
         "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Bash-Dark.svg",
+        "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Vercel-Dark.svg",
+        "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Netlify-Dark.svg",
       ],
-      iconNames: ["Git", "Github", "Google Cloud", "Postman", "Bash"],
+      iconNames: ["Git", "Github", "Google Cloud", "Postman","Prisma", "Bash", "Vercel", "Netlify"],
     },
   ];
 
   return (
     <div className="h-screen flex flex-col w-screen p-10">
       <div className="text-8xl text-center h-max pb-10 font-bold">
-        <span class="text-transparent bg-gradient-to-r from-blue-800 via-blue-500 to-blue-300 bg-clip-text">
+        <span className="text-transparent bg-gradient-to-r from-blue-800 via-blue-500 to-blue-300 bg-clip-text">
           Tech Stack
         </span>
       </div>

@@ -21,10 +21,10 @@ const Main = () => {
       </div>
       <div className="w-1/2 flex flex-row justify-center">
         <Image
-          src="https://via.placeholder.com/900x1600"
+          src="/raghavprofilepic.png"
           width={900}
           height={160}
-          className="w-2/5 h-2/5"
+          className="w-3/5 h-3/5 rounded-full"
         />
       </div>
     </div>

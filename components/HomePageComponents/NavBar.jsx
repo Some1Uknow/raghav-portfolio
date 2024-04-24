@@ -5,10 +5,10 @@ const NavBar = () => {
   return (
     <div className="navbar box-border border-white shadow-white">
       <div className="flex-1">
-        <a className="text-4xl p-4 font-semibold">{name}</a>
+        <a className="text-4xl p-4 font-semibold max-sm:text-center">{name}</a>
       </div>
       <div className="flex-none">
-        <ul className="menu menu-horizontal px-1 text-xl font-extralight">
+        <ul className="menu menu-horizontal px-1 text-xl font-extralight max-sm:hidden">
           <li>
             <a>Home</a>
           </li>

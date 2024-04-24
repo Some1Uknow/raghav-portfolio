@@ -3,13 +3,13 @@ const ProjectCard = ({ project }) => {
     project;
 
   return (
-    <div className="w-full p-4 shadow-lg rounded-lg box-border shadow-purple-700  border border-purple-700 flex gap-10">
+    <div className="w-full p-4 shadow-lg rounded-lg box-border shadow-purple-700 border border-purple-700 flex gap-10 max-sm:flex-col max-sm:gap-2">
       <img
         src={image}
         alt={name}
-        className="object-cover rounded-lg mb-4 w-1/3 mr-4"
+        className="object-cover rounded-lg mb-4 w-1/3 mr-4 max-sm:w-full max-sm:mb-0"
       />
-      <div className="w-2/3 flex flex-col justify-between p-2">
+      <div className="w-2/3 flex flex-col justify-between p-2 max-sm:w-full">
         <div>
           <div className="text-2xl font-bold mb-2">{name}</div>
           <div className="text-gray-600 mb-4">{description}</div>

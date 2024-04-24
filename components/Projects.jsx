@@ -45,35 +45,42 @@ const minorProjects = [
   {
     name: "Quote Generator",
     image: "/quoteproject.png",
-    description: "A simple quote generator that fetches random quotes from an API and displays them on the screen.",
+    description:
+      "A simple quote generator that fetches random quotes from an API and displays them on the screen.",
     techStack: "HTML, Bootstrap, JavaScript",
     githubLink: "https://github.com/some1uknow/quote-generator",
     deployedLink: "https://some1uknow.github.io/quote-generator/",
-  }
-  
+  },
 ];
 
 const Projects = () => {
   return (
     <>
       <div className="w-full">
-        <div className="text-center  mb-10">
-          <span className=" font-bold text-8xl text-transparent bg-gradient-to-r from-blue-800 via-blue-500 to-blue-300 bg-clip-text">
+        <div className="text-center mb-10 max-sm:pt-8 p-4 max-sm:mb-0">
+          <span className="font-bold text-8xl text-transparent bg-gradient-to-r from-blue-800 via-blue-500 to-blue-300 bg-clip-text max-sm:text-6xl">
             Projects
           </span>
         </div>
-        <span className="text-5xl p-10 font-bold bg-gradient-to-r from-emerald-500 to-emerald-900 bg-clip-text text-transparent">
-          Major Projects
-        </span>
-        <div className="flex flex-wrap gap-14 justify-between items-center h-1/2 p-14">
+        <div className="text-center m-5">
+          <span className="text-5xl p-10 font-bold bg-gradient-to-r from-emerald-500 to-emerald-900 bg-clip-text text-transparent max-sm:text-2xl max-sm:p-2">
+            Major Projects
+          </span>
+        </div>
+
+        <div className="flex flex-wrap gap-14 justify-between items-center h-1/2 p-14 max-sm:p-4">
           {projects.map((project, index) => (
             <ProjectCard key={index} project={project} />
           ))}
         </div>
-        <span className="text-5xl p-10 font-bold bg-gradient-to-r from-purple-300 to-purple-500 bg-clip-text text-transparent">
-          Minor Projects (Learning Projects)
-        </span>
-        <div className="flex flex-wrap gap-14 justify-between items-center h-1/2 p-14">
+        <div className="mt-5 text-center">
+          {" "}
+          <span className="text-5xl p-10 font-bold bg-gradient-to-r from-purple-300 to-purple-500 bg-clip-text text-transparent max-sm:text-xl max-sm:p-5">
+            Minor Projects (Learning Projects)
+          </span>
+        </div>
+
+        <div className="flex flex-wrap gap-14 justify-between items-center h-1/2 p-14 max-sm:p-4">
           {minorProjects.map((project, index) => (
             <ProjectCard key={index} project={project} />
           ))}

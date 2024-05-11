@@ -1,9 +1,9 @@
-import NavBar from "@/components/HomePageComponents/NavBar";
+import NavBar from "@/components/NavBar";
 import "./globals.css";
 
 export const metadata = {
   title: "Raghav Sharma Portfolio",
-  description: "Raghav Sharma's Portfolio, Full stack Developer",
+  description: "Full stack Developer - MERN Stack, Next.js",
 };
 
 export default function Layout({ children }) {

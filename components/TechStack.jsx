@@ -11,11 +11,9 @@ const TechStackItem = ({ title, icons, iconNames }) => {
     >
       <div className="flex flex-col items-center gap-6 max-sm:flex-wrap ">
         <div>
-          {" "}
           <span className="w-max text-xl">{title}</span>
         </div>
         <div className="flex flex-row gap-6 flex-wrap max-sm:gap-2">
-          {" "}
           {icons.map((icon, index) => (
             <div key={index} className="flex flex-col items-center ">
               <Image
@@ -25,7 +23,6 @@ const TechStackItem = ({ title, icons, iconNames }) => {
                 className="mb-2 text-white rounded-3xl shadow-2xl shadow-blue-700 hover:shadow-xl hover:shadow-blue-800 transition duration-300"
               />
               <div>
-                {" "}
                 <span className="text-xs">{iconNames[index]}</span>
               </div>
             </div>

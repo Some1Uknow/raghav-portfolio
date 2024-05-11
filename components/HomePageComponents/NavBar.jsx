@@ -3,7 +3,7 @@ const NavBar = () => {
   const name = "<Some1UKnow/>"
 
   return (
-    <div className="navbar box-border border-white shadow-white">
+    <div className="navbar box-border bg-black text-white font-Poppins border-white shadow-white">
       <div className="flex-1">
         <a className="text-4xl p-4 font-semibold max-sm:text-center">{name}</a>
       </div>

@@ -1,15 +1,13 @@
-import Main from "./HomePageComponents/Main"
-import NavBar from "./HomePageComponents/NavBar"
+import Main from "./HomePageComponents/Main";
 
 const Home = () => {
   return (
     <>
-        <div className="h-screen max-sm:h-max">
-            <NavBar/>
-            <Main/>
-        </div>
+      <div className="max-sm:h-max">
+        <Main />
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

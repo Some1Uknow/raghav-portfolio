@@ -1,3 +1,4 @@
+import NavBar from "@/components/HomePageComponents/NavBar";
 import "./globals.css";
 
 export const metadata = {
@@ -5,10 +6,15 @@ export const metadata = {
   description: "Raghav Sharma's Portfolio, Full stack Developer",
 };
 
-export default function RootLayout({ children }) {
+export default function Layout({ children }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
+    <>
+      <html>
+        <body className="bg-black">
+          <NavBar />
+          <main className="h-screen">{children}</main>
+        </body>
+      </html>
+    </>
   );
 }

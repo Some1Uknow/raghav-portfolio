@@ -58,28 +58,26 @@ const Projects = () => {
   const OPTIONS = { loop: true }
   return (
     <>
-      <div className="w-full flex flex-row justify-around items-center">
-        <div className="w-1/3">
-          {" "}
-          <div className="text-center m-5">
+      <div className="w-full flex flex-row justify-around items-center max-sm:flex-col">
+        <div className="w-1/3 max-sm:w-full">
+          <div className="text-center mb-5">
             <span className="text-5xl font-bold bg-gradient-to-r from-emerald-500 to-emerald-900 bg-clip-text text-transparent max-sm:text-2xl max-sm:p-2">
               Major Projects
             </span>
           </div>
-          <div className="flex flex-wrap gap-14 justify-between items-center h-1/2 max-sm:p-4">
+          <div className="flex flex-wrap gap-14 justify-between items-center h-1/2 max-sm:p-10">
             <EmblaCarousel projects={projects} options={OPTIONS} />
           </div>
         </div>
 
-        <div className="w-2/5 p-10">
+        <div className="w-1/3 max-sm:w-full">
           <div className="mt-5 text-center p-6">
-            {" "}
-            <span className="text-2xl font-bold bg-gradient-to-r from-purple-300 to-purple-500 bg-clip-text text-transparent max-sm:text-xl max-sm:p-5">
+            <span className="text-2xl w-full font-bold bg-gradient-to-r from-purple-300 to-purple-500 bg-clip-text text-transparent max-sm:text-xl">
               Minor Projects (Learning Projects)
             </span>
           </div>
 
-          <div className="flex flex-wrap gap-14 justify-between items-center h-1/2 max-sm:p-4">
+          <div className="flex flex-wrap gap-14 justify-between items-center h-1/2 max-sm:w-4/5 max-sm:pl-12">
             <EmblaCarousel projects={minorProjects} options={OPTIONS} />
           </div>
         </div>

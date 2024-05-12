@@ -7,10 +7,9 @@ const NavBar = () => {
 
   return (
     <div className="navbar box-border bg-black text-white font-Poppins border-white shadow-white">
-      <div className="drawer z-10 block md:hidden">
+      <div className="drawer z-20 block md:hidden">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content p-2 ">
-          {/* Page content here */}
           <label htmlFor="my-drawer" className="drawer-button text-2xl">
             <FaGripLines />
           </label>
@@ -22,7 +21,6 @@ const NavBar = () => {
             className="drawer-overlay"
           ></label>
           <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
-            {/* Sidebar content here */}
             <NavListItems />
           </ul>
         </div>

@@ -2,7 +2,7 @@ const ProjectCard = ({ project }) => {
   const { name, image, description, techStack, githubLink, deployedLink } = project;
 
   return (
-    <div className="p-4 h-max shadow-lg rounded-lg box-border shadow-purple-700 border border-purple-700 flex flex-col gap-4 max-sm:flex-col max-sm:gap-2">
+    <div className="p-4 h-max shadow-lg rounded-lg box-border shadow-purple-700 border border-purple-700 flex flex-col gap-4 max-sm:w-5/6 max-sm:gap-2">
       <img
         src={image}
         alt={name}

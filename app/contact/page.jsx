@@ -80,9 +80,16 @@ const CodingThemeForm = () => {
             {commandHistory.map((command, index) => (
               <p key={index}>{command}</p>
             ))}
-            <form onSubmit={handleSubmit} className="flex items-center w-full flex-col gap-4">
+            <form
+              onSubmit={handleSubmit}
+              className="flex items-center w-full flex-col gap-4"
+            >
+              <label htmlFor="name" className="sr-only">
+                Your Name
+              </label>
               <input
                 type="text"
+                id="name"
                 name="name"
                 placeholder="Your Name"
                 value={formData.name}
@@ -91,8 +98,12 @@ const CodingThemeForm = () => {
                 className="bg-black text-green-500 w-full font-mono p-4 border-white border-b outline-none flex-grow mr-2"
                 required
               />
+              <label htmlFor="email" className="sr-only">
+                Your Email
+              </label>
               <input
                 type="email"
+                id="email"
                 name="email"
                 placeholder="Your Email"
                 value={formData.email}
@@ -101,7 +112,11 @@ const CodingThemeForm = () => {
                 className="bg-black text-green-500 w-full font-mono p-4 border-white border-b outline-none flex-grow mr-2"
                 required
               />
+              <label htmlFor="message" className="sr-only">
+                Your Message
+              </label>
               <textarea
+                id="message"
                 name="message"
                 placeholder="Your Message"
                 value={formData.message}
@@ -110,11 +125,14 @@ const CodingThemeForm = () => {
                 className="bg-black text-green-500 w-full font-mono p-4 border-white border-b outline-none flex-grow mr-2"
                 required
               ></textarea>
+              {formStatus.status === "error" && (
+                <p className="text-red-500">{formStatus.message}</p>
+              )}
               <button
                 type="submit"
                 className="bg-green-500 text-2xl w-max p-4 text-black font-mono px-4 py-2 rounded"
               >
-                Send
+                {formStatus.status === "success" ? "Sent!" : "Send"}
               </button>
             </form>
           </div>

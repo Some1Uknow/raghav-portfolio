@@ -15,10 +15,10 @@ const projects = [
     name: "TechReads",
     image: "/techreads.png",
     description:
-      "TechReads is a simple and user-friendly blogging platform made for tech lovers. Unlike other complex blogging apps, TechReads offers a clean design and only the essential features you need to start sharing your tech thoughts",
-    techStack: "MongoDB, React.js, Express.js, Node.js, TailwindCSS",
+      "TechReads is a simple and minimalistc blogging platform made for tech lovers. Unlike other boring blogging apps, TechReads is powered by OpenAI APIs which ensures quick publishing and enhancement of blogs",
+    techStack: "MongoDB, React.js, Express.js, Node.js, TailwindCSS, OpenAI APIs",
     githubLink: "https://github.com/Some1Uknow/Blog-App",
-    deployedLink: "deployed-project-link-2",
+    deployedLink: "https://techreadsblog.vercel.app",
   },
 ];
 

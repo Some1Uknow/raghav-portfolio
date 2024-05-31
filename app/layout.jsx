@@ -12,7 +12,7 @@ export default function Layout({ children }) {
       <html>
         <body className="bg-black min-h-screen max-sm:h-max">
           <NavBar />
-          <main className="h-4/5">{children}</main>
+          <main>{children}</main>
         </body>
       </html>
     </>

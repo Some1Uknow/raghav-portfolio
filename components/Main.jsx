@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Main = () => {
   return (
-    <div className="flex mt-20 flex-col items-center md:flex-row md:justify-evenly max-sm:flex-col max-sm:items-center max-sm:p-3">
+    <div className="flex mt-20 flex-col items-center md:flex-row md:justify-around max-sm:flex-col max-sm:items-center max-sm:p-3">
       <div className="w-1/2 p-10 flex flex-col gap-1 md:w-1/2 max-sm:w-full max-sm:p-3">
         <span className="font-light text-5xl ml-1 md:text-5xl max-sm:text-3xl">
           I'm Raghav Sharma

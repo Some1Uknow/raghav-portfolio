@@ -19,7 +19,6 @@ export default function EmblaCarousel({ projects }, props) {
     onNextButtonClick,
   } = usePrevNextButtons(emblaApi);
 
-  // const [emblaRef] = useEmblaCarousel();
   return (
     <section className="embla w-full text-white">
       <div className="embla__viewport" ref={emblaRef}>
@@ -54,8 +53,3 @@ export default function EmblaCarousel({ projects }, props) {
   );
 }
 
-// {projects.map((project, index) => (
-//   <div key={index} className="embla__slide">
-//     <ProjectCard project={project} />
-//   </div>
-// ))}

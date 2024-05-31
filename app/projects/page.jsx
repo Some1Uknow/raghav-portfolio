@@ -1,4 +1,3 @@
-import ProjectCard from "@/components/ProjectCard";
 import EmblaCarousel from "../EmblaCarousel";
 
 const projects = [
@@ -55,29 +54,29 @@ const minorProjects = [
 ];
 
 const Projects = () => {
-  const OPTIONS = { loop: true }
+  const OPTIONS = { loop: true };
   return (
     <>
-      <div className="w-full flex flex-row justify-around items-center max-sm:flex-col">
-        <div className="w-1/3 max-sm:w-full">
+      <div className="min-w-screen h-max flex flex-row justify-around items-center max-sm:flex-col max-sm:items-center">
+        <div className="w-1/3 max-sm:w-full max-sm:p-2">
           <div className="text-center mb-5">
             <span className="text-5xl font-bold bg-gradient-to-r from-emerald-500 to-emerald-900 bg-clip-text text-transparent max-sm:text-2xl max-sm:p-2">
               Major Projects
             </span>
           </div>
-          <div className="flex flex-wrap gap-14 justify-between items-center h-1/2 max-sm:p-10">
+          <div className="flex flex-wrap gap-14 justify-between items-center h-1/2 max-sm:w-full max-sm:px-4">
             <EmblaCarousel projects={projects} options={OPTIONS} />
           </div>
         </div>
 
-        <div className="w-1/3 max-sm:w-full">
-          <div className="mt-5 text-center p-6">
-            <span className="text-2xl w-full font-bold bg-gradient-to-r from-purple-300 to-purple-500 bg-clip-text text-transparent max-sm:text-xl">
+        <div className="w-1/3 max-sm:w-full max-sm:p-2">
+          <div className="mt-5 text-center">
+            <span className="text-2xl w-full font-bold bg-gradient-to-r from-purple-300 to-purple-500 bg-clip-text text-transparent max-sm:text-xl max-sm:px-2">
               Minor Projects (Learning Projects)
             </span>
           </div>
 
-          <div className="flex flex-wrap gap-14 justify-between items-center h-1/2 max-sm:w-4/5 max-sm:pl-12">
+          <div className="flex flex-wrap gap-14 mt-5 justify-between items-center h-1/2 max-sm:w-full max-sm:px-4">
             <EmblaCarousel projects={minorProjects} options={OPTIONS} />
           </div>
         </div>

@@ -1,22 +1,23 @@
-
 const timelineData = [
   {
-    date: "May 2024 - Present",
-    event: "Selected as an Open Source Contributor in GSSoC 2024",
-    description:
-      "Joined GSSoC as a participant and started working on projects.",
-  },
-  {
-    date: "May 2024 - Present",
-    event: "Selected as an Open Source Contributor in GSSoC 2024",
-    description:
-      "Joined GSSoC as a participant and started working on projects.",
+    date: "Summer 2024",
+    event: "Open Source Contributor - APIVerse | GirlScript Summer of Code 2024 | Remote, IN",
+    description: (
+      <ul className="list-disc ml-6 mt-2">
+        <li>Contributed to APIVerse, a project which is used to store all kinds of APIs developers need.</li>
+        <li>Developed a Quote API, which can fetch user quotes based on the parameters.</li>
+        <li>Implemented GET route to fetch the quotes from a json file in the backend based on the genre and the number of quotes.</li>
+        <li>Wrote a clean and easy to read documentation for the user.</li>
+        <li>Skills - Express.js, Node.js, REST APIs, Git, Github.</li>
+      </ul>
+    ),
   },
 ];
+
 const page = () => {
   return (
-    <div className="container px-4 py-8">
-      <div className="mx-auto max-w-2xl relative">
+    <div className="flex flex-col items-center px-4 py-8">
+      <div className="mx-36">
         {timelineData.map((entry, index) => (
           <div key={index} className="mb-8">
             <div className="flex items-center mb-2">

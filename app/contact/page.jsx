@@ -72,7 +72,7 @@ const CodingThemeForm = () => {
   }, [commandHistory]);
 
   return (
-    <div className="flex w-screen h-full items-center flex-row max-sm:flex-col justify-center">
+    <div className="flex w-screen mt-20 max-sm:m-0 items-center flex-row max-sm:flex-col justify-center">
       <div className="w-1/2 max-sm:w-full p-8">
         <h2 className="text-4xl font-mono font-semibold mb-4">Contact Me</h2>
         <div className="w-full bg-black text-green-500 font-mono p-4">

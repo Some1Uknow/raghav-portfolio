@@ -17,21 +17,19 @@ export default function Hero() {
     },
   ];
   return (
-    <>
-      <div className="max-w-screen flex flex-row justify-center items-center mt-20">
-        <ProfileSection
-          name={name}
-          description={description}
-          socialLinks={socialLinks}
-        />
-        <Image
-          src="/raghav.jpeg"
-          alt="Hero Image"
-          width={1000}
-          height={1000}
-          className="w-1/4 rounded-full"
-        />
-      </div>
-    </>
+    <div className="flex flex-col md:flex-row justify-center items-center mt-10 md:mt-28 px-4 md:px-8">
+      <ProfileSection
+        name={name}
+        description={description}
+        socialLinks={socialLinks}
+      />
+      <Image
+        src="/raghav.jpeg"
+        alt="Hero Image"
+        width={500} // Adjusted for better responsiveness
+        height={500} // Adjusted for better responsiveness
+        className="w-1/4 max-sm:w-2/3 rounded-full md:mt-0" // Added margin for smaller screens and adjusted width
+      />
+    </div>
   );
 }

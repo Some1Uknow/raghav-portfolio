@@ -11,7 +11,7 @@ const ContactButton: React.FC<ContactButtonProps> = ({ text }) => {
       onClick={() => {
         window.location.href = `mailto:raghu250407@gmail.com`;
       }}
-      className="flex gap-3 justify-center px-5 bg-lime-300 rounded-[100px] max-md:pl-5"
+      className="flex flex-row justify-center mt-4 p-5 bg-lime-300 rounded-[100px]"
     >
       <span className="my-auto text-base font-bold leading-4 uppercase text-neutral-950 font-Manrope">
         {text}

@@ -1,12 +1,16 @@
 "use client";
 
+import Image from "next/image";
+
 interface SocialIconProps {
   src: string;
   url: any;
 }
 
 const SocialIcon: React.FC<SocialIconProps> = ({ src, url }) => (
-  <img
+  <Image
+  height={100}
+  width={100}
     loading="lazy"
     src={src}
     alt="social-icon"

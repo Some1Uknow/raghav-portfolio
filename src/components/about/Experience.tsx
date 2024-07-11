@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 interface ExperienceItemProps {
@@ -26,7 +27,9 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
         </div>
         {company && (
           <p className="mt-2 text-lg flex flex-row gap-2 items-center font-semibold leading-7 text-lime-300 max-md:max-w-full">
-            <img
+            <Image
+            height={100}
+            width={100}
               alt="company-icon"
               className="w-8 h-8 rounded"
               src={companyIcon}

@@ -1,6 +1,7 @@
 import React from "react";
 import ProjectInfo from "./ProjectInfo";
 import ActionLink from "./ActionLink";
+import Image from "next/image";
 
 interface ProjectCardProps {
   conceptualWorkImage: string;
@@ -31,12 +32,20 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <section className="flex flex-col w-full lg:w-1/2 bg-zinc-900 p-4 rounded-xl">
         <div className="flex flex-col justify-center text-sm font-medium leading-5 text-white">
           <div className="flex flex-col h-full">
-            <img
+            <Image
+              height={1080}
+              width={1920}
               src={conceptualWorkImage}
               alt="Conceptual work"
               className="w-full h-auto border-2 border-black rounded-lg object-contain"
             />
-            <img src={techstack} alt="Tech Stack" className="p-4" />
+            <Image
+              height={100}
+              width={100}
+              src={techstack}
+              alt="Tech Stack"
+              className="p-4 w-max"
+            />
           </div>
         </div>
       </section>

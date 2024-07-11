@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface CapabilityButtonProps {
   name: string;
   iconUrl?: any;
@@ -16,7 +18,9 @@ const CapabilityButton: React.FC<CapabilityButtonProps> = ({
     >
       <div className="flex flex-row items-center gap-2">
         {iconUrl && (
-           <img
+           <Image
+           height={100}
+           width={100}
            alt="skill icon"
            src={iconUrl}
            className="w-full h-full rounded-xl"

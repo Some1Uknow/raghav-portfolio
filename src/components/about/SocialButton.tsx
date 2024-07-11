@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 interface SocialButtonProps {
   src: string;
   link: string;
@@ -11,7 +13,9 @@ const SocialButton: React.FC<SocialButtonProps> = ({ src, link }) => {
       onClick={() => window.open(link)}
       className="flex justify-center items-center px-3.5 cursor-pointer bg-neutral-800 h-[54px] rounded-[100px] w-[54px]"
     >
-      <img
+      <Image
+      width={100}
+      height={100}
         loading="lazy"
         src={src}
         alt="Social media buttons"

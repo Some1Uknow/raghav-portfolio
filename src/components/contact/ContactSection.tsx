@@ -11,7 +11,7 @@ const ContactSection: React.FC = () => {
             <div className="flex flex-col max-md:max-w-full">
               <div className="flex flex-col max-md:max-w-full">
                 <h2 className="text-7xl font-Bebas mt-5 text-white leading-tight max-md:text-4xl">
-                  LET'S CONNECT
+                  LET&apos;S CONNECT
                 </h2>
                 <div className="flex flex-col mt-2 max-w-full text-base leading-4  w-full max-md:w-auto">
                   <div className="flex gap-1 font-Manrope font-semibold text-xl">

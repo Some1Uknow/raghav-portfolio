@@ -19,7 +19,7 @@ const Header: React.FC<HeaderProps> = () => {
         to share their feelings and connect with people. currently, raghav is
         working full-time on his own ideas, with his main focus being a social
         media app designed to promote positivity and eliminate negativity from
-        users' online experiences. he is skilled in next.js and other web
+        users&apos; online experiences. he is skilled in next.js and other web
         development technologies, having dedicated a significant portion of his
         learning time to these areas. raghav is seeking humble and friendly
         collaborators who can code well to help bring his vision to life.

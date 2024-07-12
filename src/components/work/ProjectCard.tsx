@@ -2,6 +2,7 @@ import React from "react";
 import ProjectInfo from "./ProjectInfo";
 import ActionLink from "./ActionLink";
 import Image from "next/image";
+import 'animate.css'
 
 interface ProjectCardProps {
   conceptualWorkImage: string;
@@ -29,7 +30,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <main className="flex flex-col lg:flex-row items-center gap-5 lg:mx-20 mt-10 mb-20 px-10">
-      <section className="flex flex-col w-full lg:w-1/2 bg-zinc-900 p-4 rounded-xl">
+      <section className="animate__animated animate__fadeInLeft flex flex-col w-full lg:w-1/2 bg-zinc-900 p-4 rounded-xl">
         <div className="flex flex-col justify-center text-sm font-medium leading-5 text-white">
           <div className="flex flex-col h-full">
             <Image
@@ -44,12 +45,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               width={100}
               src={techstack}
               alt="Tech Stack"
-              className="p-4 w-max"
+              className="p-4 w-max animate__animated animate__fadeIn animate__delay-1s"
             />
           </div>
         </div>
       </section>
-      <section className="flex flex-col w-full lg:w-1/2 lg:pl-10">
+      <section className="animate__animated animate__fadeInRight flex flex-col w-full lg:w-1/2 lg:pl-10">
         <div className="flex flex-col justify-center my-auto lg:mt-0 h-full">
           <div className="flex flex-col px-5">
             <h1 className="text-3xl font-medium leading-10 text-white">

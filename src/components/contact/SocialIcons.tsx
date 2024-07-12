@@ -14,7 +14,7 @@ const SocialIcon: React.FC<SocialIconProps> = ({ src, url }) => (
     loading="lazy"
     src={src}
     alt="social-icon"
-    className="shrink-0 w-8 aspect-square"
+    className="animate__animated animate__fadeIn animate__delay-1s shrink-0 w-8 aspect-square"
     onClick={() => window.open(url)}
   />
 );

@@ -28,7 +28,7 @@ export default function Hero() {
         alt="Hero Image"
         width={500} // Adjusted for better responsiveness
         height={500} // Adjusted for better responsiveness
-        className="w-1/4 max-sm:w-2/3 rounded-full md:mt-0" // Added margin for smaller screens and adjusted width
+        className="animate__animated animate__fadeInRight w-1/4 max-sm:w-2/3 rounded-full md:mt-0" // Added margin for smaller screens and adjusted width
       />
     </div>
   );

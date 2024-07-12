@@ -1,4 +1,4 @@
-import React from "react";
+"use client";
 import SocialIcons from "./SocialIcons";
 import ContactForm from "./ContactForm";
 
@@ -9,19 +9,21 @@ const ContactSection: React.FC = () => {
         <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
           <div className="flex flex-col grow justify-between self-stretch px-5 max-md:mt-5 max-md:max-w-full">
             <div className="flex flex-col max-md:max-w-full">
-              <div className="flex flex-col max-md:max-w-full">
+              <div className="animate__animated animate__fadeInLeft flex flex-col max-md:max-w-full">
                 <h2 className="text-7xl font-Bebas mt-5 text-white leading-tight max-md:text-4xl">
                   LET&apos;S CONNECT
                 </h2>
                 <div className="flex flex-col mt-2 max-w-full text-base leading-4  w-full max-md:w-auto">
                   <div className="flex gap-1 font-Manrope font-semibold text-xl">
                     <span className="text-stone-300">Say hello at</span>
-                    <a
-                      href="mailto:robertgarcia@gmail.com"
-                      className="text-white whitespace-nowrap"
+                    <p
+                      onClick={() =>
+                        (window.location.href = `mailto:raghu250407@gmail.com`)
+                      }
+                      className="text-white whitespace-nowrap cursor-pointer"
                     >
                       raghu250407@gmail.com
-                    </a>
+                    </p>
                   </div>
                 </div>
               </div>

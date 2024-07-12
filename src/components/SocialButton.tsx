@@ -11,7 +11,7 @@ const SocialButton: React.FC<SocialButtonProps> = ({ icon, url }) => {
   return (
     <Link
       href={url}
-      className="flex justify-center items-center px-3.5 bg-neutral-800 h-[54px] rounded-[100px] w-[54px]"
+      className="animate__animated animate__fadeIn animate__delay-2s flex justify-center items-center px-3.5 bg-neutral-800 h-[54px] rounded-[100px] w-[54px]"
     >
       <Image
         width={100}

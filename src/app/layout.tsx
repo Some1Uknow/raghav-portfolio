@@ -4,8 +4,8 @@ import Navbar from "@/components/Navbar";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
-  title: "Eaghav Sharma",
-  description: "Full Stack Develeoper",
+  title: "Raghav Sharma",
+  description: "Full Stack Developer",
   keywords: [
     "Next.js",
     "React",
@@ -35,6 +35,9 @@ export const metadata: Metadata = {
     "Freelancer",
     "Responsive Design",
     "Modern Web Applications",
+    "Docker", 
+    "AWS",
+    "Kubernetes"
   ],
 };
 

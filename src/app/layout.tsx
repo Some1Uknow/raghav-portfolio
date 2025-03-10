@@ -35,9 +35,9 @@ export const metadata: Metadata = {
     "Freelancer",
     "Responsive Design",
     "Modern Web Applications",
-    "Docker", 
+    "Docker",
     "AWS",
-    "Kubernetes"
+    "Kubernetes",
   ],
 };
 
@@ -47,7 +47,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const name = "raghav sharma";
-  const navItems = ["Work", "About", "Contact", "Stats"];
+  const navItems = ["About", "Work", "Stats", "Contact"];
 
   return (
     <html lang="en">

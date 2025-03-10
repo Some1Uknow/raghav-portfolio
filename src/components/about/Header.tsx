@@ -16,7 +16,7 @@ const Header: React.FC<HeaderProps> = () => {
         Passionate about solving real-world problems through clean, efficient
         code. Strong problem-solving mindset with hands-on experience in both
         frontend and backend development. Always eager to learn, adapt, and push
-        the limits of what's possible in tech.
+        the limits of what`&apos;`s possible in tech.
       </p>
     </header>
   );

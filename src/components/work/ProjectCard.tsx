@@ -29,51 +29,52 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   techstack,
 }) => {
   return (
-    <main className="flex flex-col lg:flex-row items-center gap-5 lg:mx-20 mt-10 mb-20 px-10">
-      <section className="animate__animated animate__fadeInLeft flex flex-col w-full lg:w-1/2 bg-zinc-900 p-4 rounded-xl">
-        <div className="flex flex-col justify-center text-sm font-medium leading-5 text-white">
-          <div className="flex flex-col h-full">
-            <Image
-              height={1080}
-              width={1920}
-              src={conceptualWorkImage}
-              alt="Conceptual work"
-              className="w-full h-auto border-2 border-black rounded-lg object-contain"
-            />
-            <Image
-              height={100}
-              width={100}
-              src={techstack}
-              alt="Tech Stack"
-              className="p-4 w-max animate__animated animate__fadeIn animate__delay-1s"
-            />
-          </div>
+    <article className="animate__animated animate__fadeIn flex flex-col bg-zinc-900/80 rounded-xl overflow-hidden border border-zinc-800 hover:border-zinc-700 transition-all">
+      {/* Image Section */}
+      <div className="relative w-full aspect-video overflow-hidden">
+        <Image
+          src={conceptualWorkImage}
+          alt={title}
+          fill
+          className="object-cover"
+        />
+      </div>
+      
+      {/* Content Section */}
+      <div className="flex flex-col p-4 h-full">
+        {/* Title and Description */}
+        <div>
+          <h3 className="text-xl font-medium text-white mb-2 line-clamp-1">{title}</h3>
+          <p className="text-sm text-zinc-300 mb-3 line-clamp-2">{description}</p>
         </div>
-      </section>
-      <section className="animate__animated animate__fadeInRight flex flex-col w-full lg:w-1/2 lg:pl-10">
-        <div className="flex flex-col justify-center my-auto lg:mt-0 h-full">
-          <div className="flex flex-col px-5">
-            <h1 className="text-3xl font-medium leading-10 text-white">
-              {title}
-            </h1>
-            <p className="mt-4 text-sm leading-7 text-stone-300">
-              {description}
-            </p>
-          </div>
-          <ProjectInfo year={projectInfo.year} role={projectInfo.role} />
-          <div className="flex gap-5 justify-start mt-12">
-            {actions.map((action, index) => (
-              <ActionLink
-                key={index}
-                text={action.text}
-                icon={action.icon}
-                link={action.link}
-              />
-            ))}
-          </div>
+        
+        {/* Project Info */}
+        <ProjectInfo year={projectInfo.year} role={projectInfo.role} />
+        
+        {/* Tech Stack */}
+        <div className="my-3">
+          <Image
+            height={50}
+            width={200}
+            src={techstack}
+            alt="Tech Stack"
+            className="h-8 w-auto"
+          />
         </div>
-      </section>
-    </main>
+        
+        {/* Actions */}
+        <div className="flex gap-3 mt-auto pt-2">
+          {actions.map((action, index) => (
+            <ActionLink
+              key={index}
+              text={action.text}
+              icon={action.icon}
+              link={action.link}
+            />
+          ))}
+        </div>
+      </div>
+    </article>
   );
 };
 

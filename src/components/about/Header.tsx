@@ -10,22 +10,13 @@ const Header: React.FC<HeaderProps> = () => {
         Science and Engineering.
       </h1>
       <p className="mt-4 w-full text-sm leading-7 font-Manrope text-stone-300 max-md:max-w-full">
-        raghav is a passionate developer hailing from delhi, india. from a young
-        age, he had a knack for tinkering with computers, which eventually
-        evolved from breaking things to creating new ones. at the age of 17,
-        raghav began his coding journey with python and has since been honing
-        his skills in web development. during his second year of university,
-        raghav built his first app, which allowed people from around the world
-        to share their feelings and connect with people. currently, raghav is
-        working full-time on his own ideas, with his main focus being a social
-        media app designed to promote positivity and eliminate negativity from
-        users&apos; online experiences. he is skilled in next.js and other web
-        development technologies, having dedicated a significant portion of his
-        learning time to these areas. raghav is seeking humble and friendly
-        collaborators who can code well to help bring his vision to life.
-        additionally, he is open to internship and full time opportunities
-        opportunities as a full stack engineer to gain valuable industry
-        experience.
+        Full Stack Developer skilled in JavaScript, TypeScript, React.js,
+        Next.js, Node.js, and databases like MongoDB & PostgreSQL. Winner of SIH
+        2024, with experience building AI-powered and scalable web applications.
+        Passionate about solving real-world problems through clean, efficient
+        code. Strong problem-solving mindset with hands-on experience in both
+        frontend and backend development. Always eager to learn, adapt, and push
+        the limits of what's possible in tech.
       </p>
     </header>
   );

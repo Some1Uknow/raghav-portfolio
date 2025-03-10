@@ -24,11 +24,11 @@ export default function Hero() {
         socialLinks={socialLinks}
       />
       <Image
-        src="/raghav.jpeg"
+        src="/raghav.jpg"
         alt="Hero Image"
-        width={500} // Adjusted for better responsiveness
-        height={500} // Adjusted for better responsiveness
-        className="animate__animated animate__fadeInRight w-1/4 max-sm:w-2/3 rounded-full md:mt-0" // Added margin for smaller screens and adjusted width
+        width={1000} 
+        height={1000} 
+        className="animate__animated animate__fadeInRight w-1/5 max-sm:w-2/3 rounded-full md:mt-0 object-cover"
       />
     </div>
   );

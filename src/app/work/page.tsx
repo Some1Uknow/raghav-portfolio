@@ -11,10 +11,6 @@ const HomePage: React.FC = () => {
       description:
         "Developed a tool that uses AI to create optimized resumes tailored for ATS (Applicant Tracking Systems), improving job application success rates.",
       conceptualWorkImage: "/resumemax.png",
-      projectInfo: {
-        year: "2024",
-        role: "Full Stack Developer",
-      },
       actions: [
         {
           text: "View Project",
@@ -42,10 +38,6 @@ const HomePage: React.FC = () => {
         "VentOut - Platform for building positive connections and emotional support.",
       description:
         "VentOut is a platform that provides a safe space for individuals to express their emotions and receive support from others. It aims to create a positive and empathetic community where users can share their thoughts and feelings without fear of judgment.",
-      projectInfo: {
-        year: "2024",
-        role: "Lead Full Stack Developer",
-      },
       actions: [
         {
           text: "View Project",
@@ -59,17 +51,13 @@ const HomePage: React.FC = () => {
         },
       ],
       techstack:
-        "https://skillicons.dev/icons?i=javascript,nextjs,mongodb,tailwind,github,bash,postman,vercel",
+        "https://skillicons.dev/icons?i=javascript,nextjs,mongodb,tailwind,github,vercel",
     },
     {
       conceptualWorkImage: "/techreads.png",
       title: "TechReads - AI-driven Blog App",
       description:
         "TechReads is an AI-driven blog application that offers personalized content recommendations. Users can read, write, and share articles on various tech topics, with AI algorithms providing customized suggestions.",
-      projectInfo: {
-        year: "2024",
-        role: "Lead Full Stack Developer",
-      },
       actions: [
         {
           text: "View Project",
@@ -83,7 +71,7 @@ const HomePage: React.FC = () => {
         },
       ],
       techstack:
-        "https://skillicons.dev/icons?i=javascript,react,nodejs,mongodb,express,react,tailwind,git,github,vercel,postman",
+        "https://skillicons.dev/icons?i=javascript,react,nodejs,mongodb,express,tailwind,git,github,vercel",
     },
   ];
 
@@ -99,7 +87,6 @@ const HomePage: React.FC = () => {
               conceptualWorkImage={project.conceptualWorkImage}
               title={project.title}
               description={project.description}
-              projectInfo={project.projectInfo}
               actions={project.actions}
               techstack={project.techstack}
             />

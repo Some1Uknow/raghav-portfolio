@@ -1,17 +1,12 @@
+// ProjectCard.tsx
 import React from "react";
-import ProjectInfo from "./ProjectInfo";
 import ActionLink from "./ActionLink";
 import Image from "next/image";
-import 'animate.css'
-
+import TechMarquee from "./TechMarquee";
 interface ProjectCardProps {
   conceptualWorkImage: string;
   title: string;
   description: string;
-  projectInfo: {
-    year: string;
-    role: string;
-  };
   actions: {
     text: string;
     icon: string;
@@ -24,46 +19,43 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   conceptualWorkImage,
   title,
   description,
-  projectInfo,
   actions,
   techstack,
 }) => {
   return (
-    <article className="animate__animated animate__fadeIn flex flex-col bg-zinc-900/80 rounded-xl overflow-hidden border border-zinc-800 hover:border-zinc-700 transition-all">
-      {/* Image Section */}
-      <div className="relative w-full aspect-video overflow-hidden">
+    <article className="group relative overflow-hidden rounded-lg bg-gray-950 shadow-lg transition-all duration-300 hover:shadow-xl dark:bg-neutral-900">
+      {/* Image Section with Hover Zoom */}
+      <div className="relative aspect-video overflow-hidden">
         <Image
           src={conceptualWorkImage}
           alt={title}
           fill
-          className="object-cover"
+          className="object-cover transition-transform duration-300 group-hover:scale-105"
         />
       </div>
       
       {/* Content Section */}
-      <div className="flex flex-col p-4 h-full">
+      <div className="p-6">
         {/* Title and Description */}
-        <div>
-          <h3 className="text-xl font-medium text-white mb-2 line-clamp-1">{title}</h3>
-          <p className="text-sm text-zinc-300 mb-3 line-clamp-2">{description}</p>
+        <div className="mb-4 text-stone-50">
+          <h3 className="mb-2 text-xl font-semibold dark:text-white">{title}</h3>
+          <p className="line-clamp-2 dark:text-neutral-300">{description}</p>
         </div>
         
-        {/* Project Info */}
-        <ProjectInfo year={projectInfo.year} role={projectInfo.role} />
-        
         {/* Tech Stack */}
-        <div className="my-3">
-          <Image
-            height={50}
-            width={200}
+        <div className="my-4 border-t border-neutral-100 pt-4 dark:border-neutral-800">
+          {/* <Image
+            height={32}
+            width={160}
             src={techstack}
             alt="Tech Stack"
-            className="h-8 w-auto"
-          />
+            className="h-8 w-auto opacity-75 transition-opacity hover:opacity-100"
+          /> */}
+          <TechMarquee techstack={techstack} />
         </div>
         
         {/* Actions */}
-        <div className="flex gap-3 mt-auto pt-2">
+        <div className="flex gap-3 border-t border-neutral-100 pt-4 dark:border-neutral-800">
           {actions.map((action, index) => (
             <ActionLink
               key={index}

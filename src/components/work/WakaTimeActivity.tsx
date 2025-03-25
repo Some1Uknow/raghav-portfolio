@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 interface WakaTimeActivityProps {
   username: string;
@@ -7,13 +6,13 @@ interface WakaTimeActivityProps {
 
 const WakaTimeActivity: React.FC<WakaTimeActivityProps> = ({ username }) => {
   return (
-    <section className="animate__animated animate__fadeIn mx-20 bg-zinc-900/80 p-3 rounded-xl mt-6 backdrop-blur-sm border border-zinc-800 hover:border-zinc-700 transition-all">
-      <h2 className="text-lg font-medium text-white mb-2 flex items-center">
-        <span className="mr-2">
+    <section className="animate__animated animate__fadeIn bg-zinc-900/80 p-3 rounded-xl backdrop-blur-sm border border-zinc-800 hover:border-zinc-700 transition-all">
+      <h2 className="text-base font-medium text-white mb-2 flex items-center">
+        <span className="mr-3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="18"
-            height="18"
+            width="20"
+            height="20"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -28,25 +27,27 @@ const WakaTimeActivity: React.FC<WakaTimeActivityProps> = ({ username }) => {
         WakaTime Activity
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5">
         {/* Language Distribution */}
-        <div className="bg-zinc-950/70 rounded-md overflow-hidden border border-zinc-800/50 hover:border-zinc-700/50 transition-all">
-          <div className="relative pt-[70%] w-full">
+        <div className="bg-zinc-950/70 rounded-lg overflow-hidden border border-zinc-800/50 hover:border-zinc-700/50 transition-all">
+          <div className="aspect-w-16 aspect-h-8">
             <iframe
               src="https://wakatime.com/share/@some1uknow/5ac1c376-f4a6-4ccc-8e49-d5fc56b49d89.svg"
-              className="absolute top-0 left-0 w-full h-full"
+              className="w-full h-full"
               title="WakaTime Language Distribution"
-              style={{ background: "transparent" }}
+              style={{ background: "transparent", border: "none" }}
             />
           </div>
         </div>
-        <div className="bg-zinc-950/70 rounded-md overflow-hidden border border-zinc-800/50 hover:border-zinc-700/50 transition-all">
-          <div className="relative pt-[70%] w-full">
+
+        {/* Coding Activity */}
+        <div className="bg-zinc-950/70 rounded-lg overflow-hidden border border-zinc-800/50 hover:border-zinc-700/50 transition-all">
+          <div className="aspect-w-16 aspect-h-8">
             <iframe
               src="https://wakatime.com/share/@some1uknow/522e4c68-21e0-4edf-b476-ebb2a598eec9.svg"
-              className="absolute top-0 left-0 w-full h-full"
+              className="w-full h-full"
               title="WakaTime Coding Activity"
-              style={{ background: "transparent" }}
+              style={{ background: "transparent", border: "none" }}
             />
           </div>
         </div>

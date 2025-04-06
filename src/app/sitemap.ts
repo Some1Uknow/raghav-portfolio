@@ -24,5 +24,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
       priority: 0.7,
     },
+    // add blogs url
+    {
+      url: `https://raghav-in.live/blogs`,
+      priority: 0.9,
+    },
   ]
 }

@@ -47,7 +47,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const name = "raghav sharma";
-  const navItems = ["About", "Work", "Stats", "Contact"];
+  const navItems = ["About", "Work", "Stats", "Blogs", "Contact"];
 
   return (
     <html lang="en">
